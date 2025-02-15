@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> HeartGuard AI </a>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="model.html">Our AI Model</a>
+        <a href="upload.html">Upload ECG</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="ai-model.html" class="btn"><i class="fas fa-heartbeat"></i> HealthGuard AI</a>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</header>
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>AI-powered Heart Attack Detection</h3>
+        <p>Upload your ECG data and let our AI model analyze it for early heart attack detection.</p>
+        <a href="upload.html" class="btn"> Try Now <span class="fas fa-chevron-right"></span> </a>
+    </div>
+    <div class="image">
+        <img src="{{ url_for('static', filename='image/heart.png') }}" alt="Home Image">
+    </div>
+</section>
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>Heart Attack & Symptoms</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='image/newsimg1.jpg') }}" alt="Home Image">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st February, 2025 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3> Recognizing the Warning Signs of a Heart Attack</h3>
+                <p>A heart attack, or myocardial infarction, occurs when blood flow to a part of the heart muscle is blocked. Recognizing the early warning signs such as chest pain, shortness of breath, and nausea can save lives. Early intervention is key in improving survival rates and outcomes.</p>
+                <p><strong>Source:</strong> American Heart Association, <a href="https://www.heart.org/en/health-topics/heart-attack" target="_blank">Heart Attack Symptoms and Diagnosis</a></p>
+                <a href="https://www.heart.org/en/health-topics/heart-attack" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='image/newsimg2.jpg') }}" alt="Home Image">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st February, 2025 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3> Understanding the Symptoms of a Heart Attack</h3>
+                <p>Heart attack symptoms vary for each person, but common signs include discomfort or pressure in the chest, pain radiating down the arm, and sweating. Women may also experience nausea, lightheadedness, and unusual fatigue. Knowing these symptoms can lead to quicker medical intervention and save lives.</p>
+                <p><strong>Source:</strong> Mayo Clinic, <a href="https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20350456" target="_blank">Heart Attack Symptoms and Causes</a></p>
+                <a href="https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20350456" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='image/newsimg3.jpg') }}" alt="Home Image">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st February, 2025 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3> What to Do If You Suspect a Heart Attack</h3>
+                <p>If you or someone nearby shows signs of a heart attack, acting quickly is essential. Call emergency services immediately, chew aspirin if recommended, and stay calm while waiting for medical assistance. Prompt treatment can significantly reduce the damage caused by a heart attack.</p>
+                <p><strong>Source:</strong> National Heart, Lung, and Blood Institute, <a href="https://www.nhlbi.nih.gov/health/heart-attack" target="_blank">What to Do if You Have a Heart Attack</a></p>
+                <a href="https://www.nhlbi.nih.gov/health/heart-attack" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="model.html"><i class="fas fa-chevron-right"></i>Our AI Model</a>
+            <a href="upload.html"><i class="fas fa-chevron-right"></i>Upload ECG</a>
+            <a href="about.html"><i class="fas fa-chevron-right"></i>About</a>
+            <a href="blog.html"><i class="fas fa-chevron-right"></i>Blog</a>
+            <a href="ai-model.html"><i class="fas fa-chevron-right"></i>HealthGuard AI</a>
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9090808060 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9090808060 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> hospital@mail.com </a>
+            <a href="#"> <i class="fas fa-envelope"></i> hospital@mail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai, India </a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+    </div>
+    <p>&copy; 2025 HeartGuard AI. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
