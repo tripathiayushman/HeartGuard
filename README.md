@@ -23,8 +23,8 @@ HeartGuard AI is an innovative web application that uses artificial intelligence
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/HeartGuard-AI.git
-cd HeartGuard-AI
+git clone https://github.com/tripathiayushman/Heart_guard.git
+cd Heart_guard
 ```
 
 2. Install dependencies
@@ -32,7 +32,15 @@ cd HeartGuard-AI
 pip install -r requirements.txt
 ```
 
-3. Run the application
+3. Activate Scripts
+```bash
+./venv/Scripts/activate 
+```
+Incase of already running Script
+```bash
+Set-ExecutionPolicy Unrestricted -Scope Process
+```
+4. Run the application
 ```bash
 python app.py
 ```
@@ -76,25 +84,12 @@ MIT License
 
 ## Authors
 
-- Your Name
-- Contributors
+- [Ayushman Tripathi](https://github.com/tripathiayushman)
+- [Swayam Kapoor](https://github.com/Super-cod)
 
-## Acknowledgments
 
-- TensorFlow team for the ML framework
-- Flask team for the web framework
-- Medical professionals who helped validate the system
 
 ## Disclaimer
 
 This tool is meant for educational purposes only and should not replace professional medical advice. Always consult with healthcare professionals for medical decisions.
-```
 
-You can now directly copy this entire content and paste it into your README.md file. The formatting includes:
-- Clear headings with proper hierarchy
-- Organized sections
-- Code blocks with appropriate syntax highlighting
-- Directory structure in a code block
-- Proper spacing and formatting for lists
-- Emojis for visual appeal
-- Professional disclaimer at the end
