@@ -23,8 +23,8 @@ HeartGuard AI is an innovative web application that uses artificial intelligence
 
 1. Clone the repository
 ```bash
-git clone https://github.com/tripathiayushman/Heart_guard.git
-cd Heart_guard
+git clone https://github.com/tripathiayushman/HeartGuard.git
+cd HeartGuard
 ```
 
 2. Install dependencies
