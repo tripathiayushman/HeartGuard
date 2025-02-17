@@ -31,8 +31,12 @@ cd Heart_guard
 ```bash
 pip install -r requirements.txt
 ```
+3. Pull misteral
+```bash
+ollama pull mistral
+```
 
-3. Activate Scripts
+4. Activate Scripts
 ```bash
 ./venv/Scripts/activate 
 ```
@@ -40,7 +44,7 @@ Incase of already running Script
 ```bash
 Set-ExecutionPolicy Unrestricted -Scope Process
 ```
-4. Run the application
+5. Run the application
 ```bash
 python app.py
 ```

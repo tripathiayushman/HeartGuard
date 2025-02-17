@@ -15,24 +15,61 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">HeartGuard AI</a>
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> HeartGuard AI </a>
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="model.html">Our AI Model</a>
             <a href="upload.html">Upload ECG</a>
             <a href="about.html">About</a>
             <a href="blog.html">Blog</a>
+            <a href="ai-model.html" class="btn"><i class="fas fa-heartbeat"></i> HealthGuard AI</a>
         </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
     </header>
 
     <section class="upload">
         <h1 class="heading">Upload <span>ECG Data</span></h1>
+        <ul style="text-align: justify; margin-left: 57rem;">
+            <b><i class="fas fa-check-circle"></i> Upload your ECG in CSV format <br>
+            <i class="fas fa-check-circle"></i> AI model processes your data <br>
+            <i class="fas fa-check-circle"></i> Get instant risk assessment and recommendations <br></b>
+        </ul>
         <form id="ecgUploadForm" enctype="multipart/form-data">
-            <input type="file" name="ecg_file" accept=".csv" id="ecgFile" required>
-            <button type="submit">Analyze Now</button>
+            <input type="file" name="ecg_file" accept=".csv" id="ecgFile" required class="box">
+            <button type="submit" class="btn">Analyze Now</button>
         </form>
         <div id="results" class="results-container"></div>
     </section>
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html"><i class="fas fa-chevron-right"></i>home</a>
+                <a href="model.html"><i class="fas fa-chevron-right"></i>Our AI Model</a>
+                <a href="upload.html"><i class="fas fa-chevron-right"></i>Upload ECG</a>
+                <a href="about.html"><i class="fas fa-chevron-right"></i>About</a>
+                <a href="blog.html"><i class="fas fa-chevron-right"></i>Blog</a>
+                <a href="ai-model.html"><i class="fas fa-chevron-right"></i>HealthGuard AI</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +91 9090808060 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +91 9090808060 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> hospital@mail.com </a>
+                <a href="#"> <i class="fas fa-envelope"></i> hospital@mail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai, India </a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+        </div>
+        <p>&copy; 2025 HeartGuard AI. All Rights Reserved.</p>
+    </footer>
 
     <script>
         document.getElementById('ecgUploadForm').addEventListener('submit', async (e) => {
